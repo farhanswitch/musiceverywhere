@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Konser</title>
+    <style>
+        *{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			position: relative;
+			padding-top: 8vh ;
+            min-height: 100vh;
+            padding-bottom: 7vh;
+		}
+		header{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			position: fixed;
+			top: 0;
+			left: 0;
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+			width: 100vw;
+			padding: 12px 14px;
+			height: 8vh;
+			z-index: 9999;
+			background-color: rgba(255, 255, 255, .8);
+			backdrop-filter: blur(10px);
+		}
+		.logo{
+			display: flex;
+			align-items: center;
+		}
+        .logo a{
+            display: flex;
+            text-decoration: none;
+            color: black;
+            align-items: center;
+
+            justify-content: center;
+        }
+		.logo span{
+			font-size: 20px;
+			font-weight: 600;
+		}
+		nav>ul{
+			display: flex;
+		}
+		nav > ul > li{
+			list-style: none;
+			margin-right: 15px;
+		}
+		nav ul li a{
+			text-decoration: none;
+			color: black;
+		}
+		nav ul li a:hover{
+			color: #ae8a8c;
+		}
+        main{
+            padding: 14px 8px;
+        }
+        main h1{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        main p{
+            text-align: center;
+        }
+        table{
+            display: block;
+            margin: 12px auto;
+            width: max-content;
+            border-collapse: collapse;
+        }
+        table th,
+        table td{
+            padding:4px 8px;
+        }
+        table thead tr:nth-child(2){
+            background-color: blue;
+            color: white;
+        }
+        footer{
+			height: 7vh;
+            width: 100vw;
+            position: absolute;
+            bottom: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: #ae8a8c;
+			color: white;
+		}
+		footer p{
+			text-align: center;
+			font-size: 15px;
+
+		}
+		footer p span{
+			font-weight: 400;
+		}
+    </style>
+</head>
+<body>
+    <header>
+		<div class="logo">
+            <a href="../index.html">
+			<img src="../media/itunes.png" width="40" alt="Itunes">
+			<span>MusicEveryWhere</span>
+            </a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">Jadwal Konser</a></li>
+				<li><a href="pendaftaran.html">Pendaftaran</a></li>
+				<li><a href="tentang.html">Tentang</a></li>
+			</ul>
+		</nav>
+	</header>
+    <main>
+        <h1>Jadwal Konser</h1>
+
+        <p>Berikut ini adalah jadwal konser yang akan dilaksankan pada hari Kamis, 2 Juni 2022 di BBPVP Bekasi</p>
+        <table border="1">
+           <thead>
+               <tr><th colspan="2">Jadwal Acara</th></tr>
+               <tr><th colspan="2">Kamis, 2 Juni 2022</th></tr>
+               <tr>
+                   <th>Jam</th>
+                   <th>Acara</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td>07.00</td>
+                   <td>Pembukaan</td>
+               </tr>
+               <tr>
+                   <td>07.30</td>
+                   <td>Penampilan Yura Yunita</td>
+               </tr>
+               <tr>
+                   <td>10.00</td>
+                   <td>Penampilan Fiersa Besari</td>
+               </tr>
+               <tr>
+                   <td>12.00</td>
+                   <td>Istirahat</td>
+               </tr>
+               <tr>
+                   <td>13.00</td>
+                   <td>Penampilan Raissa Anggiani</td>
+               </tr>
+               <tr>
+                   <td>15.00</td>
+                   <td>Penampilan Nadin Amizah</td>
+               </tr>
+               <tr>
+                   <td>17.00</td>
+                   <td>Penutupan</td>
+               </tr>
+           </tbody>
+        </table>
+    </main>
+    <footer>
+		<p>Copyright &copy; 2022 <span>Music Every Where</span></p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran</title>
+    <style>
+        *{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			position: relative;
+			padding-top: 8vh ;
+            min-height: 100vh;
+            padding-bottom: 7vh;
+		}
+		header{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			position: fixed;
+			top: 0;
+			left: 0;
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+			width: 100vw;
+			padding: 12px 14px;
+			height: 8vh;
+			z-index: 9999;
+			background-color: rgba(255, 255, 255, .8);
+			backdrop-filter: blur(10px);
+		}
+		.logo{
+			display: flex;
+			align-items: center;
+		}
+        .logo a{
+            display: flex;
+            text-decoration: none;
+            color: black;
+            align-items: center;
+
+            justify-content: center;
+        }
+		.logo span{
+			font-size: 20px;
+			font-weight: 600;
+		}
+		nav>ul{
+			display: flex;
+		}
+		nav > ul > li{
+			list-style: none;
+			margin-right: 15px;
+		}
+		nav ul li a{
+			text-decoration: none;
+			color: black;
+		}
+		nav ul li a:hover{
+			color: #ae8a8c;
+		}
+        main{
+            padding: 14px 8px;
+        }
+        main h1{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form{
+            display: block;
+            margin: 12px auto;
+        }
+        table{
+            display: block;
+            margin: auto;
+            width: max-content;
+            border: 1px solid black;
+            padding: 8px;
+        }
+        table thead{
+            padding: 4px 6px;
+        }
+        table input[type="submit"],
+        table input[type="reset"]{
+            padding: 4px 6px;
+            border: none;
+            border-radius: 2px;
+        }
+        table input[type="submit"]{
+            background-color: green;
+            color: white;
+        }
+        table input[type="reset"]{
+            background-color: white;
+            color: red;
+        }
+        footer{
+			height: 7vh;
+            width: 100vw;
+            position: absolute;
+            bottom: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: #ae8a8c;
+			color: white;
+		}
+		footer p{
+			text-align: center;
+			font-size: 15px;
+
+		}
+		footer p span{
+			font-weight: 400;
+		}
+    </style>
+</head>
+<body>
+    <header>
+		<div class="logo">
+			<a href="../index.html">
+<img src="../media/itunes.png" width="40" alt="Itunes">
+			<span>MusicEveryWhere</span>
+            </a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="jadwal-konser.html">Jadwal Konser</a></li>
+				<li><a href="#">Pendaftaran</a></li>
+				<li><a href="tentang.html">Tentang</a></li>
+			</ul>
+		</nav>
+	</header>
+    <main>
+        <h1>Daftarkan Diri</h1>
+        <p>Silahkan isi form berikut ini untuk mendaftarkan diri anda supaya bisa meghadiri konser yang akan kami laksanakan di BBPVP Bekasi pada Kamis, 2 Juni 2022</p>
+
+        <form method="GET">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">Biodata Diri</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Nama :
+                        </td>
+                        <td>
+                            <input type="text" name="nama" placeholder="Nama Lengkap">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email :</td>
+                        <td>
+                            <input type="email" name="email" placeholder="Alamat email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>
+                            <input type="date" name="tgl-lahir">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>File Identitas Diri (KTP, Paspor)</td>
+                        <td>
+                            <input type="file" name="doc">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>
+                            <label><input type="radio" name="jenkel" value="laki-laki">Laki-laki</label>
+                        </td>
+                        <td>
+                            <label><input type="radio" name="jenkel" value="perempuan">Perempuan</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Catatan Pendaftaran:</td>
+                        <td>
+                            <textarea name="catatan"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Daftar">
+                        </td>
+                        <td><input type="reset" value="Reset Formulir"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </main>
+    <footer>
+		<p>Copyright &copy; 2022 <span>Music Every Where</span></p>
+	</footer>
+</body>
+</html>

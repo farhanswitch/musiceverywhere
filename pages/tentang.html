@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang </title>
+    <style>
+        *{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			position: relative;
+			padding-top: 8vh ;
+            min-height: 100vh;
+            padding-bottom: 7vh;
+		}
+		header{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			position: fixed;
+			top: 0;
+			left: 0;
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+			width: 100vw;
+			padding: 12px 14px;
+			height: 8vh;
+			z-index: 9999;
+			background-color: rgba(255, 255, 255, .8);
+			backdrop-filter: blur(10px);
+		}
+		.logo{
+			display: flex;
+			align-items: center;
+		}
+        .logo a{
+            display: flex;
+            text-decoration: none;
+            color: black;
+            align-items: center;
+
+            justify-content: center;
+        }
+		.logo span{
+			font-size: 20px;
+			font-weight: 600;
+		}
+		nav>ul{
+			display: flex;
+		}
+		nav > ul > li{
+			list-style: none;
+			margin-right: 15px;
+		}
+		nav ul li a{
+			text-decoration: none;
+			color: black;
+		}
+		nav ul li a:hover{
+			color: #ae8a8c;
+		}
+        main{
+            padding: 14px 8px;
+        }
+        main h1{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        main p{
+            margin-bottom: 16px;
+            text-indent: 20px;
+        }
+        footer{
+			height: 7vh;
+            width: 100vw;
+            position: absolute;
+            bottom: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: #ae8a8c;
+			color: white;
+		}
+		footer p{
+			text-align: center;
+			font-size: 15px;
+
+		}
+		footer p span{
+			font-weight: 400;
+		}
+    </style>
+</head>
+<body>
+    <header>
+		<div class="logo">
+            <a href="../index.html">
+			<img src="../media/itunes.png" width="40" alt="Itunes">
+			<span>MusicEveryWhere</span>
+            </a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="jadwal-konser.html">Jadwal Konser</a></li>
+				<li><a href="pendaftaran.html">Pendaftaran</a></li>
+				<li><a href="#">Tentang</a></li>
+			</ul>
+		</nav>
+	</header>
+    <main>
+        <h1>Tentang Music Every Where</h1>
+        <p>Music Every Where adalah layanan streaming lagu legal dengan koleksi jutaan lagu dari ribuan penyanyi dari seluruh dunia. Kamu bisa mendengarkan semua lagu-lagu paling hits secara gratis. Selain itu Music Every Where juga sering mengadakan konser secara offline yang menampilkan penyanyi papan atas.</p>
+        <p>
+            Music Every Where dijalankan oleh peserta PBK Non-Boarding Junior Web Programming di BBPVP Bekasi atas nama <strong> Muhammad Farhan</strong>
+        </p>
+    </main>
+    <footer>
+		<p>Copyright &copy; 2022 <span>Music Every Where</span></p>
+	</footer>
+    
+</body>
+</html>
